@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction</title>
+    <link href="../images/logo.png" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="../css/style.css" rel="stylesheet"/>
+    <link href="../css/public/perdict.css" rel="stylesheet"/>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/nanobar.js"></script>
+</head>
+<body>
+<div class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="" class="navbar-brand" style="color: #85a8cb;font-size: 20px">
+                <img src="../images/logo.png" alt="Logo">黑痣诊断
+            </a>
+        </div>
+        <label for="check" class="visible-xs-inline-block" id="forcheck">MENU</label>
+        <input type="checkbox" id="check" class="hidden">
+        <div class="hidden-xs">
+            <ul class="nav navbar-nav navbar-right">   <!--设置右浮动-->
+                <li><a href="../index.html">HOME</a></li>
+                <li class=""><a href="predict.html"
+                                style="color: #85a8cb;border-bottom: 2px solid #85a8cb;">PREDICTION</a></li>
+                <li class=""><a href="communication.html">COMMUNICATION</a></li>
+                <li class=""><a href="shop.html">SHOP</a></li>
+                <li class=""><a href="person.html">PERSONAL</a></li>
+                <li class=""><a href="login.html">LOGIN</a></li>
+                <li class=""><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="frist">
+    <a href=""><img src="../images/v2.png" alt=""></a>
+</div>
+<div class="second">
+    <div class="container pre">
+        <div class="pre_top">
+            <p>TEST WINDOW</p>
+        </div>
+        <div class="pre_center">
+            <img src="../images/photo.png" alt="" id="imagephoto">
+            <label for="upload" id="uploadlabel">START</label>
+            <input type="file" class="hidden" id="upload">
+            <img src="" alt="" id="imageview">
+        </div>
+    </div>
+</div>
+<div class="thrid">
+    <div class="container">
+        <div class="skin_top">
+            <h3><span style="color: #85a8cb">Prediction</span> probability of various
+                <span style="color: #85a8cb">skin</span> diseases</h3>
+            <img src="../images/deco.png" alt="">
+            <h4>Website Hosting Reviews Free The Best Resource For Website Host</h4>
+        </div>
+        <div class="skin_center">
+            <ul id="skin">
+                <li>
+                    <img src="../images/skin1.jpg" alt="">
+                    <div>光化角化病</div>
+                    <div class="pro" id="AKIEC"></div>
+                </li>
+                <li>
+                    <img src="../images/skin2.jpg" alt="">
+                    <div>基底细胞瘤</div>
+                    <div class="pro" ID="BC"></div>
+                </li>
+                <li>
+                    <img src="../images/skin3.jpg" alt="">
+                    <div>色素良性角质</div>
+                    <div class="pro" id="BKL"></div>
+                </li>
+                <li>
+                    <img src="../images/skin4.jpg" alt="">
+                    <div>皮肤纤维瘤</div>
+                    <div class="pro" id="DF"></div>
+                </li>
+                <li>
+                    <img src="../images/skin5.jpg" alt="">
+                    <div>黑色素瘤</div>
+                    <div class="pro" id="MEL"></div>
+                </li>
+                <li>
+                    <img src="../images/skin6.jpg" alt="">
+                    <div>色素痣</div>
+                    <div class="pro" id="NV"></div>
+                </li>
+                <li>
+                    <img src="../images/skin7.jpg" alt="">
+                    <div>血管病变</div>
+                    <div class="pro" id="VASC"></div>
+                </li>
+            </ul>
+            <a href="" class="btn btn-info"><b>VIEW MORE DETAILS</b></a>
+        </div>
+    </div>
+</div>
+<!--进度条-->
+<div id="image_nanobar">
+    <div id="progress"></div>
+</div>
+<div class="four">
+    <div class="container">
+        <div class="doc_top">
+            <h3>MaxProbability detail</h3>
+            <img src="../images/deco2.png" alt="">
+        </div>
+        <div class="doc_center" id="s0">
+            鳞状细胞癌亦称皮样癌，主要从有鳞状上皮复盖的皮肤开始。
+            皮肤和结膜交界处的睑缘是其多发部位。此类癌肿恶性程度较基底细胞癌者为高。
+            发展较快，破坏也较大。 即可破坏眼部组织，侵入副鼻窦或颅内，
+            又可以通过淋巴管转移至耳前或颌下淋巴结，甚至引起全身性转移。<br>
+            肉眼观察：形态多不规则，质地较硬，无包膜，与周围组织无界限;剖面实质性，呈灰白色，中心常有坏死区。<br>
+            镜检：肿瘤细胞的形态及结构与其他地位的鳞状细胞癌相同。中、高分化者可见细胞间桥及角化珠;低分化角化不明显，无粘液细胞，亦无腺管样结构。
+            <div class="doc_bottom">
+                <div></div>
+                <div style="background: #75a0c9"></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="doc_center" id="s1">
+            基底细胞癌发生转移率低，比较偏向于良性，故又称基底细胞上皮瘤。
+            基于它有较大的破坏性，又称侵袭性溃疡。基底细胞癌多见于老年人，好发于头、面、颈及手背等处，
+            尤其是面部较突出的部位。开始是一个皮肤色到暗褐色浸润的小结节，较典型者为蜡样、半透明状结节，
+            有高起卷曲的边缘。中央开始破溃， 结黑色坏死性痂，中心坏死向深部组织扩展蔓延，呈大片状侵袭性坏死，可以深达软组织和骨组织。
+            基底细胞癌多见于老年人，好发于头、面、颈及手背等处，尤其是面部较突出的部位。
+            开始是一个皮肤色到暗褐色浸润的小结节，较典型者为蜡样、半透明状结节，有高起卷曲的边缘。
+            中央开始破溃，结黑色坏死性痂，中心坏死向深部组织扩展蔓延，呈大片状侵袭性坏死，可以深达软组织和骨组织，
+            此乃侵袭性溃疡。基底细胞癌的基底及边缘常有黑色色素沉着，本病呈慢性进行性发展。
+            <div class="doc_bottom">
+                <div></div>
+                <div style="background: #75a0c9"></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="doc_center" id="s2">
+            恶性黑色素瘤好发于白色人种，澳大利亚的QueenS-Land是世界上著名的恶性黑色素瘤高发地区。
+            中国恶性黑色素瘤的发病率不高，但由于医生及病人对其严重性认识不足，一般在就诊时往往已为时太晚，
+            治疗效果极不满意。该病好发于30～60岁，罕见的幼年性恶性黑色素瘤Spity报道了13例，年龄为1.5～12岁。
+            年龄小者一般其恶性程度较低，手术切除后预后较好。在发病性别上几乎无差别，
+            唯病灶部位与性别有关，发生在躯干者以男性居多，发生在肢体者女多于男，尤以面部雀斑型黑色素瘤多见于老年妇女。
+            组织病理：黑素细胞异常增生，在表皮内或表皮-真皮界处形成一些细胞巢。
+            这些细胞巢大小不一，并可互相融合。巢内黑素细胞的大小与形状，以及核的形状存在着不同程度的变异。
+            有丝分裂(包括异常的有丝分裂)较良性色素痣更为常见，肿瘤细胞胞质中有色素颗粒。
+            在侵袭性恶性黑素瘤中，肿瘤细胞向真皮或皮下组织浸润生长。
+            免疫组织化学染色：肿瘤细胞S100阳性、HMB45阳性及MelanA阳性。
+            <div class="doc_bottom">
+                <div></div>
+                <div style="background: #75a0c9"></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="doc_center" id="s3">
+            恶性淋巴瘤是淋巴结和结外部位淋巴组织的免疫细胞肿瘤，来源于淋巴细胞或组织细胞的恶变。
+            在我国恶性淋巴瘤虽相对少见，但近年来新发病例逐年上升，每年至少超过25000例，
+            而在欧洲、美洲和澳大利亚等西方国家的发病率可高达11／10万～18／10万，
+            略高于各类白血病的总和。在美国每年至少发现新病例3万以上。我国恶性淋巴瘤的死亡率为1.5／10万，
+            占所有恶性肿瘤死亡位数的第11～13位，与白血病相仿。<br>
+            而且，恶性淋巴瘤在我国具有一些特点：<br>
+            ①发病和死亡率较高的中部沿海地区；<br>
+            ②发病年龄曲线高峰在40岁左右，没有欧美国家的双峰曲线，而与日本相似呈一单峰；<br>
+            ③何杰金氏病所占的比例低于欧美国家，但有增高趋向；<br>
+            ④在非何杰金淋巴瘤中滤泡型所占比例很低，弥漫型占绝大多数；<br>
+            ⑤近十年的资料表明我国的T细胞淋巴瘤占34％，与日本相近，远多于欧美国家。
+            <div class="doc_bottom">
+                <div></div>
+                <div style="background: #75a0c9"></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="doc_center" id="s4">
+            表现为生长缓慢伴有外阴瘙痒和烧灼感的肿块，有外阴疼痛和阴道排液、表面皮肤破溃并伴发下肢淋巴水肿等症状。
+            以男性多见，在艾滋病病人中发病率高。 体检时可见红、褐或蓝色斑片或丘疹，亦可融合成斑块或结节，
+            呈息肉状或乳头状。大多有表面皮肤破溃并伴发下肢淋巴水肿。<br>
+            1、大体：<br>
+            肿瘤大多为暗红或紫红色斑片、丘疹、斑块或结节，亦可呈灰黄色。斑片不规则形，边界大致清楚。<br>
+            斑块表面高低不平、厚薄不一，类似多个结节相互融合。表面皮肤溃疡，伴黄色渗出液。<br>
+            2、镜下：<br>
+            分3种类型，混合细胞性、单细胞性和间变性，又可按肿瘤中血管成分的数量以及梭形细胞形态分为血管瘤型和肉瘤型两种组织学类型。<br>
+            早期真皮内可见血管分布增加，伴间质水肿，炎细胞浸润，并有较多血管外红细胞及含铁血黄素沉积。<br>
+            当病变进展时，炎细胞减少，出现梭形细胞区，与血管瘤样区相混杂。梭形细胞束似纤维肉瘤样，但其中有含红细胞的裂隙，细胞内、外可见大小不等的PAS阳性透明小体。<br>
+            再进展则小血管逐渐闭塞，梭形细胞胞核变大，深染，核分裂象增多，最终形成高度恶性肉瘤样。
+
+            <div class="doc_bottom">
+                <div></div>
+                <div style="background: #75a0c9"></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="doc_center" id="s5">
+            汗腺癌是比较少见的皮肤附件恶性肿瘤，占皮肤恶性肿瘤的2.2%～8.4%，好发于40～60岁，
+            女性较男性为多见。大部分发生于头皮、面部、腋下、胸壁、阴囊及肛门周围等处，可为单发或多发。
+            临床表现多为实性肿块，边界不清，位于表皮下或真皮层，质地坚硬，直径多在2cm以上，大者可达20cm，
+            与皮肤常常粘连，肿块表面色泽正常或略呈淡红色。有时可有毛细血管扩张，
+            病灶大时可溃破呈菜花状，常伴感染。病程一般较长，发展慢，但少数进展快，生长迅速，出现远处转移。<br>
+            1.病史 上40岁以上的中、老人发生的结节或溃疡。<br>
+            2.临床特点 <br>
+            (1)大汗腺癌：结节发生在腋下等汗腺丰富部位，呈外突性和实体性，红或紫红色质韧，无自觉症状。偶破溃呈菜花状有痛感 <br>
+            (2)小汗腺癌：发生在头面部或肢体的、快速生长的浸润性斑块 <br>
+            3.病理诊断 诊断此癌必须首先排除皮肤转移性腺癌，尤其有淋巴结肿大者更应引起注意。
+            <div class="doc_bottom">
+                <div></div>
+                <div style="background: #75a0c9"></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="doc_center" id="s6">
+            隆突性皮肤纤维肉瘤系源于成纤维细胞或组织细胞，起源于真皮缓慢生长的肿瘤，以后在斑块上发生多数结节，
+            本病呈局部侵袭，偶有广泛播散，但罕见转移。患者通常为中年人，本瘤可发生于身体任何部位，
+            但多发于躯干及四肢，特别是近侧部，其分布在腹侧多于背侧，近心端多于远心端，少见于头面部及颈区及面部。
+            组织病理检查，此瘤组织象为分化相当好的纤维肉瘤，肿瘤由大的梭形核的细胞嵌于不等量的胶原中组成，
+            通常细胞排列成不规则交织带，呈漩涡状或车轮状排列，可见数量不等的血管腔隙，少量巨细胞和组织细胞，
+            损害中可发生载色素细胞，此种损害主要侵犯有色人群，称Bednar肿瘤，有些损害波状纤维蛋白(vimentin)染色阳性，
+            CD34阳性为此肿瘤的特点，可与皮肤纤维瘤鉴别，S-100蛋白阴性，可与黑色素鉴别。
+            <div class="doc_bottom">
+                <div></div>
+                <div style="background: #75a0c9"></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer-->
+<div class="footer_bottom section">
+    <div class="agileits-w3layouts-footer">
+        <div class="container">
+            <div class="col-md-3 w3-agile-grid">
+                <h5>About Us</h5>
+                <p>By collecting, integrating and processing code resources to form high-quality codes, and through
+                    artificial intelligence technology to personalize code matching and automatic assembly, our platform
+                    provides users with standardized and convenient software development resources for rapid
+                    development.</p>
+            </div>
+            <div class="col-md-3 w3-agile-grid">
+                <h5>Recent News</h5>
+                <div class="w3ls-post-grids">
+                    <div class="w3ls-post-grid">
+                        <div class="w3ls-post-img">
+                            <a href="#"><img src="../images/foot1.png" alt=""/></a>
+                        </div>
+                        <div class="w3ls-post-info">
+                            <h6><a href="#" data-toggle="modal" data-target="#myModal">Website Hosting Reviews Free The
+                                Best Resource </a></h6>
+                            <p>FEB 24,2019</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="w3ls-post-grid">
+                        <div class="w3ls-post-img">
+                            <a href="#"><img src="../images/foot2.png" alt=""/></a>
+                        </div>
+                        <div class="w3ls-post-info">
+                            <h6><a href="#" data-toggle="modal" data-target="#myModal">Are You Ready To Buy A Home
+                                Theater</a></h6>
+                            <p>Dec 25,2018</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="w3ls-post-grid">
+                        <div class="w3ls-post-img">
+                            <a href="#"><img src="../images/foot3.png" alt=""/></a>
+                        </div>
+                        <div class="w3ls-post-info">
+                            <h6><a href="#" data-toggle="modal" data-target="#myModal">Are You Ready To Buy A Home
+                                Theater</a></h6>
+                            <p>NOV 25,2018</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 w3-agile-grid footlink">
+                <h5>QUICK LINK</h5>
+                <div class="col-xs-7">
+                    <a href="">HOME PAGE</a>
+                    <a href="">ABOUT US</a>
+                    <a href="">SERVICE</a>
+                    <a href="">PRIVACY POLICY</a>
+                    <a href="">ABOUS US</a>
+                </div>
+                <div class="col-xs-5">
+                    <a href="">TERMS</a>
+                    <a href="">BRANDS</a>
+                    <a href="">VOUCHERS</a>
+                    <a href="">SITE MAP</a>
+                    <a href="">TESTIMONIALS</a>
+                </div>
+            </div>
+            <div class="col-md-3 w3-agile-grid">
+                <h5>Address</h5>
+                <div class="w3-address">
+                    <div class="w3-address-grid">
+                        <div class="w3-address-left">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="w3-address-right">
+                            <h6>Phone Number</h6>
+                            <p>+86 17376505547</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="w3-address-grid">
+                        <div class="w3-address-left">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="w3-address-right">
+                            <h6>Email Address</h6>
+                            <p><a href="mailto:example@email.com"> mychenshan@126.com</a></p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="w3-address-grid">
+                        <div class="w3-address-left">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </div>
+                        <div class="w3-address-right">
+                            <h6>Location</h6>
+                            <p>Hangzhou,China</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; 2019.黑痣诊断 All rights reserved.More Templates</p>
+    </div>
+</div>
+<script>
+    $(function () {
+
+        //进度条设置
+        var options = {
+            target: document.getElementById("progress")
+        };
+        var nanobar = new Nanobar(options);
+
+        //处理上传图片
+        $("#upload").change(function () {
+            var file = $(this)[0].files[0];
+            //对文件类型进行判断
+            var index = file.name.lastIndexOf(".");
+            var type = file.name.substring(index);
+            if (type != ".jpg" && type != ".png") {
+                alert("Only JPG and PNG images can be uploaded");
+                return false;
+            }
+
+            //获得一个http格式的url路径:mozilla(firefox)||webkit or chrome
+            var windowURL = window.URL || window.webkitURL;
+            //createObjectURL创建一个指向该参数对象(图片)的URL
+            var dataURL = windowURL.createObjectURL(file);
+            //把url给图片的src，让其显示
+            $("#imageview").attr("src", dataURL);
+
+            $('html,body').animate({scrollTop: $('.second').offset().top - 70}, 500);
+            $("#image_nanobar").show();
+            $(".nanobar").show();
+            nanobar.go(5);
+
+            var count = 5;
+            //每隔2秒进度进行一次
+            var intelval = setInterval(function () {
+                count = count + 4;
+                nanobar.go(count);
+                if (count > 95) {
+                    clearInterval(intelval);
+                }
+            }, 2000);
+
+
+            //发送Ajax请求，将图片传给服务器
+            var formData = new FormData();
+            formData.append("file", file);
+            $.ajax({
+                url: "image",
+                data: formData,
+                dataType: "json",
+                type: "post",
+                contentType: false,
+                processData: false,
+
+                success: function (data) {
+                    //结束后台进度查询
+                    clearInterval(intelval);
+                    nanobar.go(100);
+                    $("#image_nanobar").hide();
+                    $(".nanobar").hide();
+
+                    //写数据
+                    $("#AKIEC").html(data[0]);
+                    $("#BC").html(data[1]);
+                    $("#BKL").html(data[2]);
+                    $("#DF").html(data[3]);
+                    $("#MEL").html(data[4]);
+                    $("#NV").html(data[5]);
+                    $("#VASC").html(data[6]);
+
+                    $(".thrid").show();
+                    $(".four").show();
+                    //最大概率的详情展示
+                    $("#s"+data[7]).show();
+
+                    //使头像的长宽一致
+                    $("#skin img").each(function () {
+                        var width = $(this).width();
+                        $(this).height(width);
+                    })
+
+                    //定位
+                    $('html,body').animate({scrollTop: $('.thrid').offset().top - 70}, 500);
+                }
+            })
+
+        });
+
+        //点击上面的图片也触发input（file）事件
+        $("#imagephoto").click(function () {
+            //触发input
+            $("#uploadlabel").trigger("click");
+            return false;
+        })
+    })
+</script>
+</body>
+</html>
